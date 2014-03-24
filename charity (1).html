@@ -1,0 +1,22 @@
+
+<html>
+<head>
+<script>
+	function changePicture(){
+		/* Change picture */
+		if (document.getElementById("pictureHere").src == "http://ksooklal.comuv.com/Images/Spring%20Photo.jpg"){
+			document.getElementById("pictureHere").src= "https://scontent-b.xx.fbcdn.net/hphotos-ash4/t1.0-9/1011638_735466486485432_838651905_n.jpg";
+		} else {
+			document.getElementById("pictureHere").src="http://ksooklal.comuv.com/Images/Spring%20Photo.jpg";
+		}
+	}
+	</script>
+</head>
+<div>
+<img id = "pictureHere" src = "https://scontent-b.xx.fbcdn.net/hphotos-ash4/t1.0-9/1011638_735466486485432_838651905_n.jpg" height = "300px">
+</div>
+<br/><br/>
+<div id = "businessCard" style = "width: 100px; height 100px; background-color: blue;" onclick = "changePicture()">
+	Business Card
+</div>
+</html>
