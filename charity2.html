@@ -6,57 +6,12 @@
 					background-position: center; 
 					background-repeat: no-repeat; 
 					background-attachment:fixed;
-					background-color: #A0CFEC;
+					background-color: hotpink;
 					margin: 5px;
 					padding: 0px;
 					min-width: 1250px;
 				}
 </style>
-<script type = "text/javascript" src = "http://ksooklal.comuv.com/js/Cookie.js"></script>
-<script type = 'text/javascript' src = 'http://code.jquery.com/jquery-1.11.0.min.js'></script>
-<script>
-function createCookie(name,value,days) {
-	if (days) {
-		var date = new Date();
-		date.setTime(date.getTime() + (days * 24 * 60 * 60 *1000));
-		var expires = "; expires=" + date.toGMTString();
-	} else {
-		var expires = "";
-	}
-	document.cookie = name + "=" + value + expires + "; path=/";
-}
-
-function readCookie(name) {
-	var nameEQ = name + "=";
-	var ca = document.cookie.split(';');
-	for (var i = 0; i < ca.length; i++) {
-		var c = ca[i];
-		while (c.charAt(0) == ' '){
-			c = c.substring(1,c.length);
-		}
-		if (c.indexOf(nameEQ) == 0){
-			return c.substring(nameEQ.length,c.length);
-		}
-	}
-	return null;
-}
-
-function eraseCookie(name) {
-	createCookie(name, "", -10);
-}
-	function changeBackground(){
-			$('body').css('background-image','url(https://dl.dropboxusercontent.com/u/113874582/IMG_7845%282%29.jpg)');
-			
-	}
-	function changePicture(){
-		/* Change picture */
-		if (document.getElementById("pictureHere").src == "http://ksooklal.comuv.com/Images/Spring%20Photo.jpg"){
-			document.getElementById("pictureHere").src= "https://dl.dropboxusercontent.com/u/113874582/IMG_7845%282%29.jpg";
-		} else {
-			document.getElementById("pictureHere").src="http://ksooklal.comuv.com/Images/Spring%20Photo.jpg";
-		}
-	}
-	</script>
 </head>
 <br/><br/>
 <div id = "businessCard" style = "width: 100px; height 100px; background-color: blue;" onclick = "changeBackground()">
